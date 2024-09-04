@@ -1,0 +1,49 @@
+.button {
+  padding: .625rem 1.25rem;
+  border-radius: 70px;
+  border: .125rem solid #4D5760;
+  background-color: #4D5760;
+  color: #fff;
+  font-size: 1.1875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 4.375rem;
+  max-height: 4.375rem;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  gap: 16px;
+  max-width: 17.1875rem;
+  &.disabled {
+    background-color: #B3B3B3;
+    border-color: #B3B3B3;
+    color: #7A7A7A;
+    cursor: not-allowed;
+  }
+
+  &.icon {
+    flex-shrink: 0;
+  }
+
+  .textWithIcon {
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; 
+    white-space: normal; 
+  }
+
+
+  .textWithoutIcon {
+    flex-shrink: 0;
+    text-align: start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip; 
+    max-width: 100%; 
+  }
+}

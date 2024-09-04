@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  min-width: 200px;
+  &.default:hover {
+    background-color: #2ecc71;
+    button {
+      background-color: #2ecc71;
+      border-color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &.border {
+    padding-top: 50px;
+    align-items: start;
+    border: 2px solid #4D5760;
+
+    &:hover {
+      border: 15px solid rgba(7, 192, 106, 1);
+      button {
+        background-color: rgba(7, 192, 106, 1);
+        border-color: rgba(7, 192, 106, 1);
+      }
+    }
+  }
+
+  &.firstCard {
+    grid-column: 1;
+    grid-row: span 2;
+    color: black;
+  }
+}
